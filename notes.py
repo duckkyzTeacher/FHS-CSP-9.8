@@ -18,9 +18,13 @@ def calculate_rectangle_area(width, height):
 
 printExampleHeader(2)
 #Adding modularity to functions for resuablity 
-def print_square():
+def print_square_five():
     for i in range(5):
         print('*' * 5)
+        
+def print_square_three():
+    for i in range(3):
+        print('*' * 3)
 
 # Refactored version
 def print_square(size):
@@ -30,7 +34,7 @@ def print_square(size):
     for i in range(size):
         print('*' * size)
 
-print_square(3)
+print_square(6)
 
 
 
@@ -58,7 +62,19 @@ def calculate_total(cart):
     return subtotal + calculate_tax(subtotal)
 
 
+printExampleHeader(4)
+#Optimizing Code
+def biggerThree(number):
+    if a > 3:
+        return True
+    else:
+        return False
 
+#Refactored Code     
+def betterBiggerThree(number):
+    return a > 3
+    
+    
 
 
 
